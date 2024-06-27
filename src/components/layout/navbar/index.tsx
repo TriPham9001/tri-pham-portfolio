@@ -21,7 +21,7 @@ const navbarList = [
 
 const Navbar = ({ isScrolled }: { isScrolled: boolean }) => {
   return (
-    <div
+    <nav
       className={clsx(
         { 'bg-opacity-30 drop-shadow-lg backdrop-blur-md': isScrolled },
         'mx-auto flex h-16 w-full flex-row items-center justify-center bg-white px-4'
@@ -37,7 +37,7 @@ const Navbar = ({ isScrolled }: { isScrolled: boolean }) => {
           ))}
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
